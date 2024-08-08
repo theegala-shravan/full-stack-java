@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        background-color: blueviolet;
+        border: 1px solid aqua;
+        height: 100vh;
+        color: white;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+      /* .container div {
+        margin: 5px;
+      } */
+      .box11 {
+        grid-column: 1/5;
+        border: 3px solid aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box12 {
+        border: 3px solid aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        /* width: 62vh; */
+        grid-row: 2/4;
+
+      }
+      .box13 {
+        border: 3px solid aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        /* width: 64vh; */
+        grid-column: 2/4;
+        grid-row: 2/4;
+      }
+      /* .box11 {
+        grid-column: 1/5;
+      }
+      .box12,
+      .box13 {
+        grid-row: 2/5;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box11">Header</div>
+      <div class="box12">Navbar</div>
+      <div class="box13">Content</div>
+      <div class="box12">Aside</div>
+      <div class="box11">Footer</div>
+    </div>
+  </body>
+</html>
