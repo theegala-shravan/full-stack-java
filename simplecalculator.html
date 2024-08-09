@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number"  id="in1"><br>
+    <input type="number"  id="in2"><br>
+    <input type="number"  id="mul" placeholder="1,2,3,4,5"><br><br>
+    <button onclick="result()">Result</button>
+    <p id="p"></p>
+    <script>
+        function result() {
+            var input1 = document.getElementById("in1").value;
+            var input2 = document.getElementById("in2").value;
+            var mul = document.getElementById("mul").value;
+            if(mul==1){
+                var c=parseInt(input1)+parseInt(input2);
+                document.getElementById("p").innerHTML = `${c}`;
+            } 
+            else if(mul==2){
+                var c=parseInt(input1)-parseInt(input2);
+                document.getElementById("p").innerHTML = `${c}`;
+            }
+            else if(mul==3){
+                var c=parseInt(input1)*parseInt(input2);
+                document.getElementById("p").innerHTML = `${c}`;
+            }
+            else if(mul==4){
+                var c=parseInt(input1)/parseInt(input2);
+                document.getElementById("p").innerHTML = `${c}`;
+            }
+            else if(mul==5){
+                var c=parseInt(input1)**parseInt(input2);
+                document.getElementById("p").innerHTML = `${c}`;
+            }
+            else{
+                document.getElementById("p").innerHTML = `Enter a valid number`;
+            }
+        }
+    </script>
+</body>
+</html>
