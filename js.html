@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 onmouseenter="heading()">This is a header</h1> -->
+    <input type="text" id="uname"><br>
+    <button onclick="welcome()">Hello</button>
+    <p id="p">This is a para</p>
+    <script>
+      /*It is used to check the type of the variable */
+      // var a = 10;
+      // console.log(typeof(a));
+      // console.log(a+" "+typeof(a));
+      // var name = "10";
+      // console.log(typeof(name));
+      // console.log(a+" "+typeof(name));
+      // var name = parseInt("10");
+      // console.log(typeof(name));
+      // console.log(a+" "+typeof(name));
+      // const b=7;
+      // b=5;
+      // console.log(b);
+
+      //it is used to for popup boxes
+      // var name = window.prompt("Enter your name");
+      // alert(`Welcome to our page ${name}`);
+
+      //print the name in html page
+      // document.write(name);
+
+      //print the name in console box
+      // console.log("Hello from js");
+      // console.warn("Warning message");
+      // console.error("Error message");
+      // console.info("Informative message");
+
+    //   //While loop
+    //   var i = 1;
+    //   while (i <= 10) {
+    //     console.log(i);
+    //     i++;
+    //   }
+    //   //Do while loop
+    //   j = 1;
+    //   do {
+    //     console.log(j);
+    //     j++;
+    //   } while (j <= 10);
+      //for loop divisible by 2 ad 3
+    //   for (var i = 1; i <= 100; i++) {
+    //     if (i % 6 == 0) {
+    //         console.log(i);
+    //     }
+    //   }
+      // //Exponential operator
+      //  var n=2;
+      // console.log(n**2);
+
+      // //Increment operator
+      // n++;
+      // //n=n+1;
+      // //n+=1 //Shorthand
+      // console.log(n);
+
+      // //if number is postitive or not
+      // var m=2;
+      //     if(m>0)
+      //     {
+      //         console.log("a is positive");
+      //     }
+
+      // //if number is postitive and even number using and opperator
+      // var m=3;
+      //     if(m>0 && m%2==0)
+      //     {
+      //         console.log("a is even ");
+      //     }
+      //     else{
+      //         console.log("a is not even ");
+      //     }
+
+      //     //if number is postitive and even number using or operator
+      // var m=3;
+      //     if(m>0 || m%2==0)
+      //     {
+      //         console.log("a is even ");
+      //     }
+      //     else{
+      //         console.log("a is not even ");
+      //     }
+
+      //     //if number is postitive and even number using Nested if
+      // var m=3;
+      //     if(m>0 )
+      //     {
+      //         if(m%2==0){
+      //         console.log("a is even ");
+      //         }
+      //         else{
+      //            console.log("a is postive and odd number ");
+      //         }
+      //     }
+      //     else{
+      //         console.log("a is not even ");
+      //     }
+
+      //calulate the grade 90-100>A 80-90=B 70-80=c 60-70=d >35=fail
+      // var marks=window.prompt("Enter the marks");
+      // if(marks>0){
+      //     if(marks<=100){
+      //         if(marks<=100 && marks>90){
+      //             console.log("Grade:A");
+      //         }
+      //         if(marks<=90 && marks>80){
+      //             console.log("Grade:B");
+      //         }
+      //         if(marks<=80 && marks>=70){
+      //             console.log("Grade:C");
+      //         }
+      //         if(marks<=70 && marks>60){
+      //             console.log("Grade:D");
+      //         }
+      //         if(marks<35){
+      //             console.log("Fail");
+      //         }
+      //         else{
+      //         console.log("Enter a valid number");
+      //     }
+      //     }
+      //     else{
+      //         console.log("Enter a valid number");
+      //     }
+      // }
+      // else{
+      //     console.log("Enter a positive number");
+      // }
+
+      //using triple equals
+        // var a=1;
+        // var b="c";
+        // console.log(a==b);
+
+        //functions
+        
+        // function Hello(){
+        //     console.log("Hello!");
+        // }
+        
+        // calling the function differnte times of function
+        // method-1
+        // Hello();
+        // method-2
+    //     var myvar=  function(a,b){
+
+    //         return a*b;
+    //     }
+    //    var res=myvar(7,8);
+    //    console.log(res);
+    //     console.log(myvar(5,6));
+
+      //object concept
+        // var student={
+        //     id:5,branch:"Mech",name:"Shravan",writingExams:function(){
+        //         console.log("Writing exams");
+        //     },
+        //     listeningClasses:function(){
+        //         console.log("Listening classes");
+        //     }
+        // }
+        // console.table(student);
+        // student.listeningClasses();
+        // student.writingExams();
+        // console.log(student.name+" "+student.id+" "+student.branch);
+        // var rollno="id";
+        // //console.log(student.rollno); undefined
+        // console.log(student["id","branch","name"]);
+        // console.log(student[rollno]);
+
+        //Event handling
+            // function hello(){
+            // alert("Welcome to our page");
+            // }
+            // function heading(){
+            //     alert("Mouse is entered towards the heading");
+            // }
+            // function welcome(){
+            //     var name=document.getElementById("uname").value;
+            //     alert(`Welcome ${name}`);
+            // }
+            function welcome(){
+                 var name=document.getElementById("uname").value;
+                 document.getElementById("p").innerHTML=`<h1>Welcome User ${name}</h1>`;
+             }
+    </script>
+  </body>
+</html>
